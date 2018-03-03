@@ -9,12 +9,12 @@ class App extends Component {
       <Layout>
         <div className="App-header">
           <div className="logo_holder">
-          <img src={logo} className="App-logo" alt="logo" />
+            <img src={logo} className="App-logo" alt="logo"/>
           </div>
           <h2>Build React Burger</h2>
         </div>
 
-  </Layout>
+      </Layout>
     );
   }
 }
