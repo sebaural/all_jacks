@@ -164,6 +164,11 @@ module.exports = {
               require.resolve('style-loader'),
               {
                 loader: require.resolve('css-loader'),
+                options: {
+                  importLoaders: 1,
+                  modules: true,
+                  localIdentName: ''
+                },
               },
               {
                 loader: require.resolve('postcss-loader'),

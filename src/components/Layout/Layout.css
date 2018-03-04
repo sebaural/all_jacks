@@ -3,3 +3,29 @@ main {
   margin: 0 auto;
   padding: 20px;
 }
+
+.App_header {
+  display: flex;
+  align-content: flex-end;
+  padding: 12px 20px;
+  background: #003d61;
+  color: #ffffff;
+}
+.App_header h2 {
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 300;
+}
+.logo_holder {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #e0ae36;
+  margin: 0 20px 0 0;
+  padding: 6px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.logo_holder img  {
+  width: 100%;
+  height: auto;
+}
