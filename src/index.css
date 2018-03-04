@@ -12,6 +12,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-size: 16px;
   font-family: 'Anonymous Pro', monospace;
 }
@@ -26,7 +27,4 @@ hr {
   width: 50%;
   margin: 10px auto;
   border: 1px solid #ccc;
-}
-h2 {
-  font-family: "Source Code Pro", sans-serif;
 }

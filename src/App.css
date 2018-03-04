@@ -5,7 +5,10 @@
   background: #003d61;
   color: #ffffff;
 }
-
+.App-header h2 {
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 300;
+}
 .logo_holder {
   width: 3.5rem;
   height: 3.5rem;
