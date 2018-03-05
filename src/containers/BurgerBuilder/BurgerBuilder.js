@@ -11,7 +11,7 @@ class BurgerBuilder extends React.Component {
       bacon: 1,
       cheese: 2,
       condiments: 1,
-      meat: 1
+      meat: 2
     }
   };
 
