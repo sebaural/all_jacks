@@ -10,7 +10,8 @@ class BurgerBuilder extends React.Component {
       salad: 1,
       bacon: 1,
       cheese: 2,
-      meat: 2
+      condiments: 1,
+      meat: 1
     }
   };
 
