@@ -52,3 +52,11 @@
   background-color: #99703F;
   color: white;
 }
+
+
+.BuildControl .Less svg,
+.BuildControl .More svg {
+  color: #f00;
+  font-size: 0.8rem;
+  padding: 0;
+}
