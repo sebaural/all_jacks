@@ -20,7 +20,7 @@ class BurgerIngredient extends Component {
         );
         break;
       case ( 'condiments' ):
-          ingredient = <span className={ingredientClasses.condiment}>
+          ingredient = <div className={ingredientClasses.condiment}>
             <span className={ingredientClasses.salt_pepper}>
               <i className="fas fa-bomb"></i>
             </span>
@@ -30,7 +30,7 @@ class BurgerIngredient extends Component {
             <span className={ingredientClasses.salt_pepper}>
               <i className="fas fa-bomb"></i>
             </span>
-          </span>;
+          </div>;
         break;
       case ( 'meat' ):
         ingredient = <div className={ingredientClasses.Meat}>MEAT</div>;

@@ -5,12 +5,19 @@ import classes from './Burger.css';
 
 const burger = ( props ) => {
 
-  const transformedIngredients = Object.keys(props.ingredients)
+  let transformedIngredients = Object.keys(props.ingredients)
     .map(igKey => {
       return [...Array(props.ingredients[igKey])].map((_, i) => {
         return  <BurgerIngredient key={igKey + '_' + i} type={igKey} />;
       })
-    });
+    })
+    .reduce((arr, el) => {
+      return arr.concat(el);
+    }, []);
+
+    if (transformedIngredients.length === 0) {
+      transformedIngredients = <div className={classes.add_stuff}><i className="fas fa-plus"></i><i className="fas fa-utensils"></i> Start adding ingredients right NOW ! </div>
+    }
 
   return (
     <div className={classes.Burger}>

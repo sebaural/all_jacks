@@ -1,7 +1,7 @@
 .BreadBottom {
   height: 13%;
   width: 80%;
-  background: linear-gradient(#F08E4A, #904e24);
+  background: linear-gradient(#f8bf47, #773907);
   border-radius: 0 0 30px 30px;
   box-shadow: inset -15px 0 #6d2307;
   margin: 2% auto;
@@ -10,7 +10,7 @@
 .BreadTop {
   height: 20%;
   width: 80%;
-  background: linear-gradient(#bc581e, #edcba9);
+  background: linear-gradient(#bc581e, #ffb533);
   border-radius: 50% 50% 0 0;
   box-shadow: inset -15px 0 #5c2d0b;
   margin: 2% auto;
@@ -114,6 +114,9 @@
 .condiment {
   display: flex;
   justify-content: space-around;
+}
+.condiment:first-child {
+  justify-content: center;
 }
 .salt_pepper {
   display: block;
