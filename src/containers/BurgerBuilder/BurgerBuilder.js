@@ -37,30 +37,53 @@ class BurgerBuilder extends React.Component {
 
     const priceAddition = INGREDIENT_PRICES[type];
     const oldPrice = this.state.totalPrice;
-    const newPrice =  oldPrice + priceAddition;
-    newPrice.toFixed(2) ;
+    const newPrice = oldPrice + priceAddition;
 
     this.setState({totalPrice: newPrice, ingredients: updatedIngredients});
-
-    console.log(priceAddition);
-
   };
 
   removeIngredientHandler = (type) => {
+    const oldCount = this.state.ingredients[type];
+    if(oldCount <=0) {
+      return;
+    }
 
-};
+    const updatedCount = oldCount - 1;
+    // make a copy of state to keep it immutable
+    const updatedIngredients = {
+      ...this.state.ingredients
+    };
+    updatedIngredients[type] = updatedCount;
+
+    const priceDeduction = INGREDIENT_PRICES[type];
+    const oldPrice = this.state.totalPrice;
+    const newPrice = oldPrice - priceDeduction;
+
+    this.setState({totalPrice: newPrice, ingredients: updatedIngredients});
+  };
 
   render() {
 
+    const disabledInfo = {
+      ...this.state.ingredients
+  };
+
+  for (let key in disabledInfo) {
+    disabledInfo[key] = disabledInfo[key] <= 0
+  }
+
     return (
-        <Aux>
-          <Burger ingredients={this.state.ingredients} />
-          <div className="totalPriceOfBurger"> {this.state.totalPrice} </div>
-          <div> <BuildControls
-            ingredientsAdded={this.addIngredientHandler}
-          />
-          </div>
-        </Aux>
+      <Aux>
+        <Burger ingredients={this.state.ingredients}/>
+        <div>
+          <BuildControls
+          ingredientsAdded={this.addIngredientHandler}
+          ingredientRemoved={this.removeIngredientHandler}
+          disablediabo={disabledInfo}
+          price={this.state.totalPrice}
+        />
+        </div>
+      </Aux>
     );
 
   }
