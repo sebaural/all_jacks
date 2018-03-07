@@ -13,9 +13,7 @@ import BuildControl from './BuildControl/BuildControl';
 
 const buildControls = ( props ) => (
     <div className={classes.BuildControls}>
-
       <div>Current Price: {props.price.toFixed(2)}</div>
-
       {controls.map(ctrl => (
         <BuildControl
           key={ctrl.label}
@@ -25,6 +23,9 @@ const buildControls = ( props ) => (
           disabled={props.disablediabo[ctrl.type]}
         />
       ))}
+
+      <button className={classes.OrderButton}>ORDER NOW</button>
+
     </div>
 );
 
