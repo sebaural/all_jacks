@@ -33,7 +33,6 @@ class BurgerBuilder extends React.Component {
       ...this.state.ingredients
     };
 */
-
     const sum = Object.keys(ingredients)
       .map(igKey => {
         return ingredients[igKey];
@@ -41,7 +40,7 @@ class BurgerBuilder extends React.Component {
       .reduce((accum, el) => {
         return accum + el;
       }, 0);
-      this.setState({purchasable: sum > 0});
+      this.setState({purchasable: sum > 0 });
   };
 
   addIngredientHandler = (type) => {
@@ -63,7 +62,7 @@ class BurgerBuilder extends React.Component {
 
   removeIngredientHandler = (type) => {
     const oldCount = this.state.ingredients[type];
-    if(oldCount <=0) {
+    if (oldCount <= 0) {
       return;
     }
 
