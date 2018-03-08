@@ -33,6 +33,7 @@ class BurgerBuilder extends React.Component {
       ...this.state.ingredients
     };
 */
+    // make a copy of state to keep it immutable
     const sum = Object.keys(ingredients)
       .map(igKey => {
         return ingredients[igKey];
