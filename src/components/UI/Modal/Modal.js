@@ -4,8 +4,13 @@ import classes from './Modal.css';
 
 const modal = ( props ) => {
   return (
-    <div className={classes.Modal}>
-
+    <div
+      style={{
+        transform: props.show ? 'translateY(0)' : 'translateY(-150vh)',
+        opacity: props.show ? '0.9' : '0'
+      }}
+      className={classes.Modal}>
+      {props.children}
   </div>
   );
 };

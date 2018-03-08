@@ -10,15 +10,15 @@ const orderSummary = (props) => {
       );
     });
 
-  console.log(ingredientSummary);
-
   return (
     <Aux>
       <h3>Your Order</h3>
       <hr/>
       <h4>Your burger has following ingredients:</h4>
       <ul>
+
         {ingredientSummary}
+
       </ul>
       <p>Continue to Order</p>
     </Aux>
