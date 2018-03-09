@@ -1,6 +1,7 @@
 import React from 'react';
 import Aux from '../../../hoc/Aux';
 
+import orderClass from './OrderSummary.css';
 import Button from '../../UI/Button/Button';
 
 const orderSummary = (props) => {
@@ -13,20 +14,22 @@ const orderSummary = (props) => {
     });
 
   return (
-    <Aux>
-      <h3>Your Order</h3>
-      <hr/>
-      <h4>Your burger has following ingredients:</h4>
-      <ul>
-
-        {ingredientSummary}
-
-      </ul>
-      <p>Continue to Order</p>
-
-      <Button btnType="Danger" clicked={props.purchaseCancelled} > Cancel </Button>
-      <Button btnType="Success" clicked={props.continuePurchase} > Continue </Button>
-    </Aux>
+          <Aux>
+            <h4>Your Order</h4>
+            <hr/>
+            <h5>Your burger has following ingredients:</h5>
+            <ul>
+            {ingredientSummary}
+            </ul>
+            <p><strong>Order Total:  {props.totalPrice}</strong></p>
+            <div className={orderClass.btnContainer}>
+              <p>Continue to Order</p>
+              <div>
+              <Button btnType="Danger" clicked={props.purchaseCancelled} > Cancel </Button>
+              <Button btnType="Success" clicked={props.continuePurchase} > Continue </Button>
+              </div>
+            </div>
+          </Aux>
   );
 };
 
