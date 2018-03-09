@@ -89,6 +89,11 @@ class BurgerBuilder extends React.Component {
     this.setState({goAheadWithPurchase: true});
   };
 
+  cancelPurchaseHandler = () => {
+    this.setState({goAheadWithPurchase: false});
+  };
+
+
   render() {
 
     const disabledInfo = {
@@ -101,7 +106,7 @@ class BurgerBuilder extends React.Component {
 
     return (
       <Aux>
-        <Modal show={this.state.goAheadWithPurchase}>
+        <Modal show={this.state.goAheadWithPurchase} modalClosed={this.cancelPurchaseHandler} >
           <OrderSummary ingredients={this.state.ingredients}/>
         </Modal>
         <Burger ingredients={this.state.ingredients}/>
