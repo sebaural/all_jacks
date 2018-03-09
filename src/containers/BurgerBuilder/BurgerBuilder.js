@@ -87,7 +87,6 @@ class BurgerBuilder extends React.Component {
 
   purchaseHandler = () => {
     this.setState({goAheadWithPurchase: true});
-    console.log(this.state);
   };
 
   render() {
