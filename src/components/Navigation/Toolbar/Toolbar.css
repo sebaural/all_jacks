@@ -34,13 +34,6 @@
   height: auto;
 }
 
-nav {
-  width: 40px;
-  background: #f90;
-  cursor: pointer;
-}
-
-
 @media all and (max-width: 375px) {
   .App_header h2 {
     padding: 8px 0 0;
@@ -53,3 +46,4 @@ nav {
     padding: 6px;
   }
 }
+

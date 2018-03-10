@@ -2,6 +2,7 @@ import React from 'react';
 
 import classes from './Toolbar.css';
 import logo from '../../../logo.svg';
+import Nav from '../NavigationItems/NavigationItems';
 
 const Toolbar = ( props ) => {
   return (
@@ -14,7 +15,9 @@ const Toolbar = ( props ) => {
         <h2>Build React Burger</h2>
       </div>
       
-      <nav> ... </nav>
+      <nav>
+        <Nav/>
+      </nav>
 
     </header>
   );

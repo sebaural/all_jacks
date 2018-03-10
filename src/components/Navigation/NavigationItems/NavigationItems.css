@@ -1,0 +1,12 @@
+nav {
+  width: 40px;
+  background: #f90;
+  cursor: pointer;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
