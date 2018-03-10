@@ -14,10 +14,8 @@ const Toolbar = ( props ) => {
         <h2>Build React Burger</h2>
       </div>
       
-      <nav>
-        nav ... nav ... nav
-      </nav>      
-      
+      <nav> ... </nav>
+
     </header>
   );
 };
