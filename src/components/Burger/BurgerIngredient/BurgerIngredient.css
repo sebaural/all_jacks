@@ -126,3 +126,11 @@
 }
 
 
+@media all and (max-width: 375px) {
+  .BreadBottom,
+  .BreadTop {
+    height: 40px;
+  }
+
+}
+

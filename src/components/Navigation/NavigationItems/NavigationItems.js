@@ -5,7 +5,8 @@ import NavItem from './NavItem/NavItem';
 
 const Nav = () => (
   <ul>
-    <NavItem />
+    <NavItem link="/" active > HOME </NavItem>
+    <NavItem link="/price" > PRICE </NavItem>
   </ul>
 );
 
