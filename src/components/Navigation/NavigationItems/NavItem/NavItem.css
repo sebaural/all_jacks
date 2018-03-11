@@ -1,5 +1,6 @@
 .NavItem {
   display: flex;
+  flex-direction: column;
   align-items: center;
   height: 100%;
 }
@@ -8,20 +9,28 @@
   display: block;
   color: #fff;
   font-size: 0.8rem;
-  height: calc(100% - 4px);
+  height: calc(100% - 16px);
   text-decoration: none;
-  /*padding: 16px 10px;*/
-  border-bottom: 4px solid transparent;
+  background: #26568a;
+  border-bottom: 4px solid #00c2ff;
+  padding: 36% 25% 0;
 }
 
 .NavItem a:hover,
 .NavItem a:focus {
-  background: #ff7700;
+  background: #26568a;
   border-bottom: 4px solid #00c2ff;
+  opacity: 0.6;
 }
 .NavItem a:active,
 .NavItem a.active {
   background: #2a79b4;
   border-bottom: 4px solid #ff7700;
+}
+
+.NavItem a.active:hover {
+  background: #2a79b4;
+  border-bottom: 4px solid #ff7700;
+  opacity: 1;
 }
 
