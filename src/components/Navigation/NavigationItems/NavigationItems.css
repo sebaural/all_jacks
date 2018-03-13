@@ -11,3 +11,8 @@ ul {
   height: 100%;
 }
 
+@media all and (max-width: 415px) {
+  nav {
+    display: none;
+  }
+}

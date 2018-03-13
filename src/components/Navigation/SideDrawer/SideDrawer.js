@@ -3,8 +3,8 @@ import classes from './SideDrawer.css';
 
 const SideDrawer = ( props ) => {
   return (
-        <div>
-          SideDrawer
+        <div className={classes.SideDrawer}>
+          <i className="fas fa-ellipsis-v"></i>
         </div>
   );
 };

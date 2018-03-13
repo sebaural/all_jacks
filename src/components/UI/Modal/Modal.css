@@ -7,7 +7,7 @@
   box-shadow: 0 1px 8px #17d0ff;
   padding: 16px;
   left: 25%;
-  top: 30%;
+  top: 15%;
   box-sizing: border-box;
   opacity: 0.95;
   transition: all 0.3s ease-out;
@@ -23,7 +23,7 @@
 @media (max-width: 600px) {
   .Modal {
     width: 80%;
-    top: 15%;
+    top: 10%;
     left: 10%;
   }
 }

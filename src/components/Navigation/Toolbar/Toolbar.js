@@ -3,6 +3,7 @@ import React from 'react';
 import classes from './Toolbar.css';
 import logo from '../../../logo.svg';
 import Nav from '../NavigationItems/NavigationItems';
+import SideDrawer from '../SideDrawer/SideDrawer';
 
 const Toolbar = ( props ) => {
   return (
@@ -18,6 +19,8 @@ const Toolbar = ( props ) => {
       <nav>
         <Nav/>
       </nav>
+
+      <SideDrawer />
 
     </header>
   );

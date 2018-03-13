@@ -1,0 +1,18 @@
+.SideDrawer {
+  width: 56px;
+  border-left: 1px solid #f90;
+  text-align: center;
+  cursor: pointer;
+}
+
+.SideDrawer svg {
+  transform: translateY(110%);
+  color: #f90;
+}
+
+
+@media all and (min-width: 415px) {
+  .SideDrawer {
+    display: none;
+  }
+}
