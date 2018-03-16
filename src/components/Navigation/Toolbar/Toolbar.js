@@ -13,7 +13,7 @@ const Toolbar = ( props ) => {
         <div className={classes.logo_holder}>
           <img src={logo} className={classes.App_logo} alt="logo"/>
         </div>
-        <h2>Build React Burger</h2>
+        <h3>Build React Burger</h3>
       </div>
       
       <nav>
