@@ -4,16 +4,16 @@
   background: linear-gradient(#f8bf47, #773907);
   border-radius: 0 0 30px 30px;
   box-shadow: inset 0 -10px 30px #6d2307;
-  margin: 2% auto;
+  margin: 0 auto 0.5rem;
 }
 
 .BreadTop {
-  height: 80px;
+  height: 60px;
   width: 80%;
   background: linear-gradient(#bc581e, #ffb533);
   border-radius: 50% 50% 0 0;
   box-shadow: inset -15px 0 #5c2d0b;
-  margin: 2% auto;
+  margin: 0.5rem auto 0;
   position: relative;
 }
 
@@ -21,29 +21,30 @@
   width: 10%;
   height: 15%;
   position: absolute;
-  background-color: white;
+  background-color: #ffee7b;
   left: 30%;
-  top: 50%;
+  top: 80%;
   border-radius: 40%;
   transform: rotate(-20deg);
-  box-shadow: inset -2px -3px #c9c9c9;
+  box-shadow: inset -2px -3px #c9c788;
 }
 
 .Seeds1:after {
-  content: "";
+  content: "seeds";
   width: 100%;
   height: 100%;
   position: absolute;
   background-color: #d98038;
   left: -170%;
-  top: -260%;
+  top: -230%;
   border-radius: 40%;
   transform: rotate(60deg);
   box-shadow: inset -1px 2px #777777;
+  font-size: 0.5rem;
 }
 
 .Seeds1:before {
-  content: "";
+  content: "seed";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -53,6 +54,7 @@
   border-radius: 40%;
   transform: rotate(60deg);
   box-shadow: inset -1px -3px #7a5321;
+  font-size: 0.5rem;
 }
 
 .Seeds2 {
@@ -85,14 +87,14 @@
   width: 80%;
   height: 8%;
   background: linear-gradient(#b4210a, #7f320b);
-  margin: 2% auto;
+  margin: 0.5rem auto;
   border-radius: 15px;
 }
 
 .Cheese {
   width: 90%;
   height: 4.5%;
-  margin: 2% auto;
+  margin: 0.5rem auto;
   background: linear-gradient(#f4d004, #d6bb22);
   border-radius: 20px;
 }
@@ -100,7 +102,7 @@
 .Salad {
   width: 85%;
   height: 7%;
-  margin: 2% auto;
+  margin: 0.5rem auto;
   background: linear-gradient(#228c1d, #91ce50);
   border-radius: 20px;
 }
@@ -108,8 +110,9 @@
 .Bacon {
   width: 80%;
   height: 3%;
-  background: linear-gradient(#bf3813, #c45e38);
-  margin: 2% auto;
+  background: linear-gradient(#bf3813, #ffe7d9);
+  margin: 0.5rem auto;
+  border-radius: 50%;
 }
 .condiment {
   display: flex;
@@ -120,11 +123,14 @@
 }
 .salt_pepper {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   color: #f00;
 }
-
+.salt_pepper svg {
+  width: 12px;
+  height: 12px;
+}
 
 @media all and (max-width: 375px) {
   .BreadBottom,
