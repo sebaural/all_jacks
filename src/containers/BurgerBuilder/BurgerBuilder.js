@@ -96,9 +96,9 @@ class BurgerBuilder extends React.Component {
 
     this.setState({loading: true});
 
-    let orderTime = new Date();
-    orderTime = orderTime.getFullYear() + ' : ' + orderTime.getDate() + ' : ' + (orderTime.getMonth() + 1 )+ ' : ' + orderTime.getHours() + ' : ' + orderTime.getMinutes();
-
+    let getTimes = new Date();
+    let orderTime = getTimes.toISOString();
+    
     const order = {
       ingredients: this.state.ingredients,
       price: this.state.totalPrice.toFixed(2),
