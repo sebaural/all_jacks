@@ -7,6 +7,7 @@ import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 import Spinner from '../../components/UI/Spinner/Spinner';
+import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 
 const INGREDIENT_PRICES = {
@@ -96,7 +97,7 @@ class BurgerBuilder extends React.Component {
     this.setState({loading: true});
 
     let orderTime = new Date();
-    orderTime.toLocaleDateString();
+    orderTime = orderTime.getFullYear() + ' : ' + orderTime.getDate() + ' : ' + (orderTime.getMonth() + 1 )+ ' : ' + orderTime.getHours() + ' : ' + orderTime.getMinutes();
 
     const order = {
       ingredients: this.state.ingredients,
@@ -166,4 +167,4 @@ class BurgerBuilder extends React.Component {
 
 }
 
-export default BurgerBuilder;
+export default withErrorHandler(BurgerBuilder, axios);
